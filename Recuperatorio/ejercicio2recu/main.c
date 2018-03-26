@@ -3,14 +3,16 @@
 
 int main()
 {
-    char nombre[10];
-    char localidad[15];
+    char nombre[4];
+    char localidad[5];
 
     printf("Ingrese su nombre: ");
-    scanf("%s",&nombre[10]);
+    fflush(stdin);
+    scanf("%s",nombre);
 
     printf("Ingrese su localidad: ");
-    scanf("%s",&localidad[15]);
+    fflush(stdin);
+    scanf("%s",localidad);
 
     printf("Usted es %s y vive en %s",nombre,localidad);
 

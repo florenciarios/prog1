@@ -8,7 +8,7 @@ int main()
     printf("Ingrese un día de la semana: ");
     scanf("%s",&semana[15]);
 
-    //NO SALE RESULTADO POR STRING xd
+    //NO SALE RESULTADO POR STRING
 
     switch(semana[15])
     {

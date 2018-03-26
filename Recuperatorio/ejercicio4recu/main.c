@@ -5,6 +5,7 @@ int main()
 {
     int num1;
     int num2;
+    int resultado;
 
     printf("Ingrese numero: ");
     scanf("%d",&num1);
@@ -12,19 +13,26 @@ int main()
     printf("Ingrese numero: ");
     scanf("%d",&num2);
 
-    //NO SE CONCATENAR xd
+    //NO SE CONCATENAR
 
     if(num1>num2)
     {
-        num1/num2;
+        resultado=num1/num2;
+        printf("%d",resultado);
     }
     else if(num1==num2)
     {
-
+        printf("%d%d",num1,num2);
     }
     else
     {
-        num1+num2;
+        resultado=num1+num2;
+        printf("%d \n",resultado);
+
+        if(resultado<50)
+        {
+            printf("La suma es menor a 50");
+        }
     }
 
     return 0;

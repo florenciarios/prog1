@@ -20,6 +20,7 @@ int main()
     do
     {
         printf("Ingrese nombre del animal: ");
+        fflush(stdin);
         scanf("%c",&nombre);
 
         printf("Ingrese peso del animal: ");
@@ -63,7 +64,8 @@ int main()
             menort++;
         }
 
-        printf("¿Desea ingresar otro animal): ");
+        printf("Desea ingresar otro animal?: ");
+        fflush(stdin);
         scanf("%c",&respuesta);
 
     }while(respuesta=='s');
@@ -71,9 +73,9 @@ int main()
     promedio=(float)acumpeso/animales;
 
     printf("La cantidad de temperaturas pares es %d \n",pares);
-    printf("El nombre %c y temperatura %d del animal más pesado \n",nompeso,tempeso);
+    printf("El nombre %c y temperatura %d del animal mas pesado \n",nompeso,tempeso);
     printf("La cantidad de animales que viven a menos de 0 grados %d \n",menort);
-    printf("El promedio del peso de todos los animales %f \n",promedio);
+    printf("El promedio del peso de todos los animales %2.f \n",promedio);
 
     return 0;
 }

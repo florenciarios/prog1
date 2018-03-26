@@ -16,17 +16,19 @@ int main()
     printf("Ingrese descuento: ");
     scanf("%d",&des);
 
+    fflush(stdin);
+
     desc=(float)des/100*precio;
 
     preciodesc=precio-desc;
 
-    iva=21/100*(float)precio;
+    iva=(float)21/100*precio;
 
     total=preciodesc-iva;
 
-    printf("El descuento es &d",des);
-    printf("El precio con el descuento es %f",desc);
-    printf("El iva es %f",iva);
-    printf("El precio con descuento más el IVA es %f",total);
+    printf("El descuento es %d \n",des);
+    printf("El precio con el descuento es %.2f \n",preciodesc);
+    printf("El iva es %.2f \n",iva);
+    printf("El precio con descuento mas el IVA es %.2f",total);
     return 0;
 }
